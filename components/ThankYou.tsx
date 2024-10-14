@@ -42,7 +42,7 @@ const ThankYou: React.FC<ThankYouProps> = ({ formData }) => {
       <CheckCircle className="w-16 h-16 mx-auto text-green-500 mb-4" />
       <h2 className="text-2xl font-semibold mb-4">Thank You!</h2>
       <p className="text-lg mb-6">Your order has been successfully submitted. We'll contact you soon with further details.</p>
-      <div className="flex justify-center items-center space-x-4 p-4">
+      <div className="flex justify-center items-center space-x-4 p-4 d-none">
         <Button
           className="px-6 py-2"
           onClick={() => {

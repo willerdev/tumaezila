@@ -20,7 +20,7 @@ const getIcon = (field: string) => {
     case 'phone': return <Phone className="w-5 h-5" />;
     case 'address': return <MapPin className="w-5 h-5" />;
     case 'product': return <Smartphone className="w-5 h-5" />;
-    case 'memory': return <HardDrive className="w-5 h-5 text-black" />;
+    case 'memory': return <HardDrive className="w-5 h-5 text-blac " />;
     case 'ram': return <Cpu className="w-5 h-5 " />;
     case 'priceRange': return <DollarSign className="w-5 h-5" />;
     case 'paymentMethod': return <CreditCard className="w-5 h-5" />;

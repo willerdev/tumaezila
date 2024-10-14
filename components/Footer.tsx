@@ -26,14 +26,14 @@ export default function Footer() {
       {/* WhatsApp and Call buttons for mobile only */}
       <div className="fixed bottom-0 left-0 right-0 flex justify-between bg-white md:hidden">
         <a
-          href="tel:+1234567890"
+          href="tel:+821074276822"
           className="bg-black text-white w-1/2 text-center p-4 flex items-center justify-center"
         >
           <FaPhone className="mr-2" />
           <span>Call</span>
         </a>
         <a
-          href="https://wa.me/+1234567890"
+          href="https://wa.me/+821074276822"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-white text-black w-1/2 text-center p-4 flex items-center justify-center"
