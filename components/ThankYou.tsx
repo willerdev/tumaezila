@@ -42,17 +42,18 @@ const ThankYou: React.FC<ThankYouProps> = ({ formData }) => {
       <CheckCircle className="w-16 h-16 mx-auto text-green-500 mb-4" />
       <h2 className="text-2xl font-semibold mb-4">Thank You!</h2>
       <p className="text-lg mb-6">Your order has been successfully submitted. We'll contact you soon with further details.</p>
-      <div className="flex justify-center space-x-4">
+      <div className="flex justify-center items-center space-x-4 p-4">
         <Button
+          className="px-6 py-2"
           onClick={() => {
             window.location.reload();
           }}
         >
           Place Another Order
         </Button>
-        <Button variant="secondary" asChild>
+        <Button variant="secondary" asChild className="px-6 py-2">
           <a
-            href="https://wa.me/+254123456789"
+            href="https://wa.me/+821074276822"
             target="_blank"
             rel="noopener noreferrer"
             className="flex items-center"

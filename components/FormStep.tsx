@@ -20,8 +20,8 @@ const getIcon = (field: string) => {
     case 'phone': return <Phone className="w-5 h-5" />;
     case 'address': return <MapPin className="w-5 h-5" />;
     case 'product': return <Smartphone className="w-5 h-5" />;
-    case 'memory': return <HardDrive className="w-5 h-5" />;
-    case 'ram': return <Cpu className="w-5 h-5" />;
+    case 'memory': return <HardDrive className="w-5 h-5 text-black" />;
+    case 'ram': return <Cpu className="w-5 h-5 " />;
     case 'priceRange': return <DollarSign className="w-5 h-5" />;
     case 'paymentMethod': return <CreditCard className="w-5 h-5" />;
     default: return null;
@@ -48,13 +48,13 @@ export default function FormStep({ fields, formData, onChange }: FormStepProps) 
           exit={{ opacity: 0, y: -20 }}
           transition={{ duration: 0.3 }}
         >
-          <Label htmlFor={field} className="block text-sm font-medium mb-1 capitalize">
+          <Label htmlFor={field} className="block text-sm font-medium mb-1 capitalize text-white">
             {field}
           </Label>
           <div className="relative">
             {field === 'product' || field === 'paymentMethod' ? (
               <Select name={field} onValueChange={(value) => handleSelectChange(field, value)}>
-                <SelectTrigger className="w-full">
+                <SelectTrigger className="w-full text-black">
                   <SelectValue placeholder="Select option" />
                 </SelectTrigger>
                 <SelectContent>
@@ -73,7 +73,7 @@ export default function FormStep({ fields, formData, onChange }: FormStepProps) 
               </Select>
             ) : (
               <div className="relative">
-                <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none">
+                <span className="absolute inset-y-0 left-0 flex items-center pl-3 pointer-events-none text-black">
                   {getIcon(field)}
                 </span>
                 <Input
